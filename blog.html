@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /blog/index.html
+active: blog
+---
+<h1>Blog</h1>
+
+<div>
+{% for post in site.posts %}
+<div class="blog-post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.title }}</h2></a>
+    <h4>{{ post.date | date: "%b %-d, %Y" }}</h4>
+    <p>{{ post.content | strip_html | truncatewords:35 }}</p>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read more</a>
+</div>
+{% endfor %}
+</div>
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

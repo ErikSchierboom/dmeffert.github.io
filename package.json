@@ -1,0 +1,9 @@
+{
+  "name": "dennismeffert.com",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

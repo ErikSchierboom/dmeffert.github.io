@@ -1,0 +1,33 @@
+<header>
+    <div class="clearfix">
+        <img src="images/photo.jpg" alt="" />
+        <div>
+            <div class="x">Dennis Meffert</div>
+            <div class="y">Freelance software developer</div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="navbar navbar-static-top" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-left">
+                {% if page.active == 'about' %}
+                <li class="item-active"><a href="">About</a></li>
+                {% else %}
+                <li class="item"><a href="">About</a></li>
+                {% endif %}
+                {% if page.active == 'blog' %}
+                <li class="item-active"><a href="/blog">Blog</a></li>
+                {% else %}
+                <li class="item"><a href="/blog">Blog</a></li>
+                {% endif %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://twitter.com/DennisMeffert" rel="external"><i class="fa fa-twitter fa-lg"></i><span class="links-text">Twitter</span></a></li>
+                <li><a href="http://www.github.com/dmeffert" rel="external"><i class="fa fa-github fa-lg"></i><span class="links-text">Github</span></a></li>
+                <li><a href="http://www.linkedin.com/in/dennismeffert" rel="external"><i class="fa fa-linkedin fa-lg"></i><span class="links-text">LinkedIn</span></a></li>
+                <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss fa-lg"></i><span class="links-text">RSS</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

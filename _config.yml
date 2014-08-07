@@ -1,0 +1,11 @@
+title:              www.dennismeffert.com
+email:              dennismeffert@hotmail.com
+description:        "Personal website of Dennis Meffert."
+encoding:           UTF-8
+url:                "http://www.dennismeffert.com"
+twitter_username:   dennismeffert
+github_username:    dmeffert
+markdown:           kramdown
+permalink:          /blog/:title/
+paginate:           5
+exclude:            ['server.sh', 'node_modules', 'package.json', 'Gruntfile.js', 'README.md']
